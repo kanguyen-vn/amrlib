@@ -7,6 +7,7 @@ spacy>=2.0          # also requires model download `python -m spacy download en_
 tqdm
 transformers>=4.16   # transformers>=4.16.0 required for training parse_xfm models. Inference should work with >=3.0
 smatch
+pydantic<1.10.3     # dependency of spacy, 1.10.3 returns error
 
 # Model specific
 cached_property     # parse_spring model only
